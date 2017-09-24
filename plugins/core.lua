@@ -2826,7 +2826,7 @@ return {
 		"^###cb:(/whitelist):(.*)$",
 		"^###cb:(/cleanwhitelist):(.*)$",
 		"^###cb:(/silentlist):(.*)$",
-		"^###cb:(/kiava):(.*)$",
+		"^###cb:(/beyond):(.*)$",
 		"^###cb:(/cleansilentlist):(.*)$",
 		"^###cb:(/link):(.*)$",
 		"^###cb:(/rules):(.*)$",
