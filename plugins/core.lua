@@ -2819,7 +2819,7 @@ return {
 		"^###cb:(/modlist):(.*)$",
 		"^###cb:(/cleanmods):(.*)$",
 		"^###cb:(/bans):(.*)$",
-		"^###cb:(/kiavair):(.*)$",
+		"^###cb:(/beyond):(.*)$",
 		"^###cb:(/cleanbans):(.*)$",
 		"^###cb:(/filterlist):(.*)$",
 		"^###cb:(/cleanfilterlist):(.*)$",
