@@ -2656,11 +2656,11 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SoLiD", callback_data="/solid:"..matches[2]}, 
-			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
+			{text = "> kiava", callback_data="/kiava:"..matches[2]}, 
+			{text = "> ngyca", callback_data="/ngyca:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> Kiava Website ', url = 'https://kiava.co'}
 		},
 		{
 			{text= '> Back' ,callback_data = '/option:'..matches[2]}
@@ -2670,11 +2670,11 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> سعید", callback_data="/solid:"..matches[2]}, 
-			{text = "> طوفان", callback_data="/toofan:"..matches[2]}
+			{text = "> کیاوا", callback_data="/kiava:"..matches[2]}, 
+			{text = "> نگیسا", callback_data="/ngyca:"..matches[2]}
 		},
 		{
-			{text = '> گیت هاب تیم ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> سایت کیاوا ', url = 'https://kiava.co'}
 		},
 		{
 			{text= '> بازگشت' ,callback_data = '/option:'..matches[2]}
