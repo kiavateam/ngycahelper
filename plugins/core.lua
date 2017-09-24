@@ -49,7 +49,7 @@ local lang = redis:get(hash)
 			{text = '> More ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '> About Us ', callback_data = '/beyond:'..GP_id}
+			{text = '> About Us ', callback_data = '/kiavair:'..GP_id}
 		},
 		{
 			{text= '> Back' ,callback_data = '/lang:'..GP_id}
@@ -67,7 +67,7 @@ local lang = redis:get(hash)
 			{text = '> قابلیت های بیشتر ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '> درباره ما ', callback_data = '/beyond:'..GP_id}
+			{text = '> درباره ما ', callback_data = '/kiavair:'..GP_id}
 		},
 		{
 			{text= '> بازگشت' ,callback_data = '/lang:'..GP_id}
@@ -2650,17 +2650,17 @@ local keyboard = {}
 end
 end
          -- ####################### About Us ####################### --
-if matches[1] == '/beyond' then
+if matches[1] == '/v' then
 	local text = _config.info_text
     if not lang then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SoLiD", callback_data="/solid:"..matches[2]}, 
-			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
+			{text = "> Kiava", callback_data="/kiarash:"..matches[2]}, 
+			{text = "> Ngyca", callback_data="/ngyca:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> Our Site ', url = 'https://Kiava.co'}
 		},
 		{
 			{text= '> Back' ,callback_data = '/option:'..matches[2]}
@@ -2670,11 +2670,11 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> سعید", callback_data="/solid:"..matches[2]}, 
-			{text = "> طوفان", callback_data="/toofan:"..matches[2]}
+			{text = "> کیاوا", callback_data="/kiava:"..matches[2]}, 
+			{text = "> نگیسا", callback_data="/ngyca:"..matches[2]}
 		},
 		{
-			{text = '> گیت هاب تیم ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> سایت ما ', url = 'https://kiava.co'}
 		},
 		{
 			{text= '> بازگشت' ,callback_data = '/option:'..matches[2]}
@@ -2684,68 +2684,51 @@ if matches[1] == '/beyond' then
     edit_inline(msg.message_id, text, keyboard)
 end
 
-if matches[1] == '/solid' then
+if matches[1] == '/kiava' then
 local text = [[*》SoLiD Information《*
-_》Age :_ *26*
-_》Name :_ *Saeid Rostami*
-_》City :_ *Shahriar - Tehran*
+_》Age :_ *22*
+_》Name :_ *Kiarash Khatib*
+_》City :_ *Iran - Tehran*
 *-------------------------*
-*》GitHub :《*
-》[SoLiD021](Github.Com/SoLiD021)
-*-------------------------*
-*》Bridges :《*
-_》Pv : _[@SoLiD](Telegram.Me/SoLiD)
-_》PvResan : _[@SoLiD Pv](Telegram.Me/SoLiD021Pv_Bot)
+*》Site :《*
+》Https://kiava.co
 *-------------------------*
 *》Expertise :《*
-_》_*Lua*, *Cli* `and` *Api* _Bots_
+_》_*Html5+Css3*, *Php* , *Lua* , *jQuery & Ajax* , *Javascript* , *Bootstrap* , *Json* `and` *Api* _Bots_
 *-------------------------*]]
   if not lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/beyond:"..matches[2]}
+				{text = "> Back", callback_data="/kiavair:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "> بازگشت", callback_data="/kiavair:"..matches[2]}
 			}
 		}
   end
     edit_inline(msg.message_id, text, keyboard)
 end
-if matches[1] == '/toofan' then
-local text = [[*》ToOfan Information《*
-_》Age :_ *35*
-_》Name :_ *Ali AzizAbadi*
-_》City :_ *Bam - Kerman*
-*-------------------------*
-*》GitHub :《*
-》[To0fan](GitHub.Com/To0fan)
-*-------------------------*
-*》Bridges :《*
-_》Pv :_ [@ToOfan](Telegram.Me/ToOfan)
-_》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
-*-------------------------*
-*》Expertise :《*
-*》C#, Lua, VB.Net, JAVA*
-
-*-------------------------*]]
+if matches[1] == '/ngyca' then
+local text = [[ 
+			Nothing!!!
+			]]
   if not lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/beyond:"..matches[2]}
+				{text = "> Back", callback_data="/kiavair:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "> بازگشت", callback_data="/kiavair:"..matches[2]}
 			}
 		}
   end
@@ -2821,7 +2804,7 @@ return {
 		"^###cb:(/mutekeyboard):(.*)$",
 		"^###cb:(/mutecontact):(.*)$",
 		"^###cb:(/muteforward):(.*)$",
-		"^###cb:(/toofan):(.*)$",
+		"^###cb:(/ngyca):(.*)$",
 		"^###cb:(/setflood):(.*)$",
 		"^###cb:(/floodup):(.*)$",
 		"^###cb:(/flooddown):(.*)$",
@@ -2836,14 +2819,14 @@ return {
 		"^###cb:(/modlist):(.*)$",
 		"^###cb:(/cleanmods):(.*)$",
 		"^###cb:(/bans):(.*)$",
-		"^###cb:(/beyond):(.*)$",
+		"^###cb:(/kiavair):(.*)$",
 		"^###cb:(/cleanbans):(.*)$",
 		"^###cb:(/filterlist):(.*)$",
 		"^###cb:(/cleanfilterlist):(.*)$",
 		"^###cb:(/whitelist):(.*)$",
 		"^###cb:(/cleanwhitelist):(.*)$",
 		"^###cb:(/silentlist):(.*)$",
-		"^###cb:(/solid):(.*)$",
+		"^###cb:(/kiava):(.*)$",
 		"^###cb:(/cleansilentlist):(.*)$",
 		"^###cb:(/link):(.*)$",
 		"^###cb:(/rules):(.*)$",
